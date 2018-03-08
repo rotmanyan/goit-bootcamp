@@ -1,0 +1,9 @@
+.nav{
+    list-style-type: none;
+}
+header{
+    text-align: center;
+}
+.bar{
+    display: inline-block;
+}
