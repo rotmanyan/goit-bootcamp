@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+img {
+    display: block;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -16,6 +20,7 @@
 .wrapper {
     width: 1110px;
     margin: auto;
+    padding: 50px 0;
 }
 
 /*<---*header*--->*/
@@ -30,27 +35,31 @@
     font-weight: bold;
 }
 
-.nav {
+.nav-list {
+    margin: auto;
     float: right;
 }
 
-.nav-list {
-    margin: auto;
-}
-
 .nav-item {
+    padding-top: 12.5px;
     list-style: none;
     float: left;
-    margin: 12px 40px 0 0;
+    margin-right: 40px;
     /*padding-right: 40px;*/
     /*padding-top: 12px;*/
 }
+
+.nav-item:last-child {
+    margin-right: -40px;
+}
+
 .nav-item:hover {
     color: #1bbc9b;
 }
 .nav-link {
     text-transform: uppercase;
     font-size: 19px;
+    /*padding-top: 20px;*/
 }
 
 .nav-list:last-of-type {
@@ -58,7 +67,7 @@
 }
 
 .header {
-    margin: 50px 0 105px 0;
+    margin-bottom: 100px;
 }
 /*<----*header*---->*/
 
@@ -71,13 +80,13 @@
     margin-bottom: 92px;
 }
 
-.title:after {
+.title::after {
     display: block;
     content: "";
     width: 164px;
     height: 7px;
     background-color: #1bbc9b;
-    margin: auto;
+    margin: 12px auto 0;
 }
 
 .products {
@@ -90,7 +99,7 @@
 
 .post-product {
     width: 255px;
-    display: inline-block;
+    float: left;
     margin: 0 30px 30px 0;
 }
 
@@ -98,14 +107,17 @@
     margin-right: -30px;
 }
 
+.post-product:nth-last-of-type(-n+4){
+    margin-bottom: -30px;
+}
+
 .name-product {
     background-color: #323232;
     color: #ffffff;
     width: 200px;
-    display: inline-block;
     font-size: 24px;
     text-transform: uppercase;
-    margin-top: -4px;
+    /*margin-top: -4px;*/
     float: left;
     padding: 5.75px 0 5.75px 5px;
 }
@@ -116,7 +128,7 @@
     width: 55px;
     font-size: 24px;
     float: right;
-    margin-top: -4px;
+    /*margin-top: -4px;*/
     padding: 5.75px 6.75px;
     text-align: center;
     /*font-family: 'Roboto', sans-serif;*/
@@ -128,11 +140,14 @@ background-color: rgba(26, 188, 156, 0.8);
 .post-product:hover .price {
 background-color: rgba(26, 188, 156, 0.4);
 }
+/*products--------------------------------------*/
+
+/*news------------------------------------------*/
 
 .post-news {
-    display: inline-block;
+    float: left;
     width: 350px;
-    margin: 0 25px 100px 0;
+    margin-right: 25px;
 }
 
 .post-news:last-child {
