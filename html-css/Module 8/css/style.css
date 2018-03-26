@@ -1,0 +1,245 @@
+@import "reset.css";
+@import "font.css";
+@import "var.css";
+
+.wrapper-header {
+    background-image : url(../img/bg992.jpeg);
+    background-repeat : no-repeat;
+    /*background-size: cover;*/
+    background-position : center top;
+    padding: 1rem 0.5rem 6.75rem;
+    background-attachment: fixed;
+}
+
+.reverse {
+    display : flex;
+    flex-direction: column-reverse;
+}
+
+.logo {
+    font-size : 1.25rem;
+    text-transform : uppercase;
+    font-weight : bold;
+    margin: 0.5rem auto 2.375rem;
+    color : #FFFFFF;
+}
+
+.container {
+    max-width: 920px;
+    margin: auto;
+    padding: 0 0.5rem;
+}
+
+.sing-list {
+    display : flex;
+    justify-content : center;
+    margin-bottom : 7.1875rem;
+}
+
+.sing-item {
+    font-size: 1rem;
+    font-weight : bold;
+    color : #FFFFFF;
+    border: 0.125rem solid transparent;
+    padding: 0.5rem 1.25rem;
+}
+
+.sing-item:hover {
+    border: 0.125rem solid #FFFFFF;
+    border-radius: 5rem;
+}
+
+.small-title {
+    text-transform : uppercase;
+    font-size : 1.9rem;
+    color : #FFFFFF;
+    text-align : center;
+}
+
+.big-title {
+    text-transform : uppercase;
+    font-size : 1.9rem;
+    color : #FFFFFF;
+    text-align : center;
+    font-weight : bold;
+}
+
+.top-description {
+    text-align : center;
+    font-size : 1.6rem;
+    color : #FFFFFF;
+    margin : 1.25rem 0;
+    font-family : var(--roboto);
+}
+
+.button {
+    display : block;
+    margin : auto;
+    background-color : #fe3b49;
+    color : #FFFFFF;
+    font-weight : bold;
+    border: 0.125rem solid #FE3B49;
+    border-radius: 5rem;
+    padding: 0.563rem 2.597rem;
+    font-size : 1rem;
+}
+
+.button:hover {
+    border: 0.125rem solid #FFFFFF;
+    border-radius: 5rem;
+    background-color : #FFFFFF;
+    color : #FE3B49;
+    outline: 0;
+}
+
+.wrapper-main {
+    /*background-color : #FFFFFF;*/
+    padding: 4.25rem 0;
+}
+
+.title-main {
+    text-align : center;
+    color : #373737;
+    font-size : 1.8rem;
+    margin-bottom :1rem;
+}
+
+.people {
+    margin-bottom: 1.75rem ;
+}
+
+.position {
+    position: relative;
+    height : 7.5rem;
+    width  : 7.5rem;
+    margin : 0.875rem auto 1.25rem;
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+.fa-tv {
+    background-color : #FE3B49;
+    color : #FFFFFF;
+    font-size :2.2rem;
+    position : absolute;
+    padding: 0.25rem;
+    border-radius: 50%;
+    bottom : 0;
+    right : 0;
+    border: 0.25rem solid #FFFFFF;
+}
+
+.fa-coffee {
+    background-color : #70E8B0;
+    color : #FFFFFF;
+    font-size : 2.2rem;
+    position : absolute;
+    padding: 0.25rem;
+    border-radius: 50%;
+    bottom : 0;
+    right : 0;
+    border: 0.25rem solid #FFFFFF;
+}
+
+.fa-viadeo {
+    background-color : #FEA223;
+    color : #FFFFFF;
+    font-size :2.8rem;
+    position : absolute;
+    padding: 0.25rem;
+    border-radius: 50%;
+    bottom : 0;
+    right : 0;
+    border: 0.25rem solid #FFFFFF;
+}
+
+.fa-telegram-plane {
+    background-color : #6453DA;
+    color : #FFFFFF;
+    font-size :2.8rem;
+    position : absolute;
+    padding: 0.25rem;
+    border-radius: 50%;
+    bottom : 0;
+    right : 0;
+    border: 0.25rem solid #FFFFFF;
+}
+
+.name {
+    font-weight : bold;
+    font-size : 1rem;
+    text-transform : capitalize;
+    text-align : center;
+    color : #333333;
+    margin-bottom : 1rem;
+}
+
+.description {
+    font-size : 1rem;
+    text-align : center;
+    color : #666666;
+    font-family : var(--roboto);
+}
+
+.btn {
+    display : block;
+    margin : auto;
+    background-color : transparent;
+    color : #FE3B49;
+    font-weight : bold;
+    border: 0.125rem solid #FE3B49;
+    border-radius: 5rem;
+    padding: 0.563rem 4.207rem;
+    font-size : 1rem;
+}
+
+.btn:hover {
+    border: 0.125rem solid #FE3B49;
+    border-radius: 5rem;
+    background-color : #FE3B49;
+    color : #FFFFFF;
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        margin : 0;
+        font-size : 1.45rem;
+    }
+    .people {
+        display : flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .art {
+        flex-basis: 35%;
+    }
+    .reverse {
+        flex-direction: row;
+        margin: 0 3.0625rem;
+        justify-content: space-between;
+    }
+    .small-title {
+        font-size : 3.306rem;
+    }
+    .big-title {
+        font-size : 3.306rem;
+    }
+    .top-description {
+        font-size : 2.15rem;
+    }
+    .button {
+        padding : 0.563rem 0.878rem;
+    }
+    .btn {
+        padding: 0.563rem 1.457rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .art {
+        flex-basis :25%;
+    }
+}
