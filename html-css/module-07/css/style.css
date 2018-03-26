@@ -16,6 +16,8 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom : 8.75rem;
 }
 
 .logo {
@@ -27,7 +29,7 @@
 }
 
 .navigation {
-    flex-basis: 26%;
+    flex-basis: 50%;
 }
 
 .nav {
@@ -41,8 +43,6 @@
     /*padding: 0.625rem 0;*/
     font-family: var(--mont);
     color: #222222;
-    margin-top: 0.625rem;
-    margin-right: 2.5rem;
 }
 
 .nav-item:last-child {
@@ -63,6 +63,7 @@
     text-align: center;
     font-family: var(--robo);
     text-transform: uppercase;
+    margin-bottom : 5rem;
 }
 
 .title::after {
@@ -72,7 +73,7 @@
     font-size: 1rem;
     font-family: var(--droid);
     font-style: italic;
-    margin: 1.5rem 0 5rem 0;
+    margin-top: 1.5rem;
 }
 
 .body-elements {
@@ -138,10 +139,11 @@
 }
 
 .input {
+    width : 100%;
     font-family: var(--mont);
     display: block;
     border: 2px solid #f0f0f0;
-    padding: 1rem 17rem 1rem 1rem;
+    padding: 1rem;
     margin-bottom: 1.875rem;
     border-radius: 0.25rem;
     transition: 0.4s;
@@ -154,16 +156,16 @@
 .texterea {
     font-family: var(--mont);
     /*max-height: 28.795rem;*/
-    /*display: block;*/
-    /*width: 100%;*/
+    display: block;
+    width: 49%;
     border: 2px solid #f0f0f0;
-    padding: 1rem 17rem 1rem 1rem;
+    padding: 1rem;
     border-radius: 0.25rem;
     transition: 0.4s;
 }
 
 .group-input {
-    margin-right: 1rem;
+    width : 49%;
 }
 
 .input:focus, .texterea:focus {
