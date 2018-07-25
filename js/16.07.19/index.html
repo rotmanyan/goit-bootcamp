@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container">
+
+        <template id="template">
+            {{#each phones}}
+            <div class="module-card-bottom">
+                <img src={{image}} alt={{name}} class="module-card-img"/>
+
+                <div>
+                    <h2>{{name}}</h2>
+                    <p class="price">{{price}}</p>
+                    <p>{{description}}</p>
+                </div>
+
+                <div class="hide">
+                    <p>{{cpu}}</p>
+                    <p>{{camera}}</p>
+                    <p>{{size}}</p>
+                    <p>{{weight}}</p>
+                    <p>{{display}}</p>
+                    <p>{{battery}}</p>
+                    <p>{{memory}}</p>
+                </div>
+
+                <button class="module-card-button">See More</button>
+            </div>
+            {{/each}}
+        </template>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

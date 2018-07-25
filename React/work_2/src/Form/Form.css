@@ -1,0 +1,19 @@
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #6397ff;
+  width: 165px;
+  margin-right: 2px;
+}
+
+.input:last-child {
+  margin: 0;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #6397ff;
+  color: #FFF;
+  border: 2px solid #6397ff;
+}

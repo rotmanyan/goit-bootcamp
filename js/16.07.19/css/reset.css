@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    max-width: 62rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+}
+
+.module-card-bottom {
+    max-width: 25rem;
+}
+
+.module-card-img {
+    margin: 1.5rem 0;
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
+
+.module-card-button {
+    background: seagreen;
+    color: white;
+    border: none;
+    margin-top: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.price {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+​

@@ -1,0 +1,5 @@
+.wrapper {
+    background-image: url(../images/bg-orig.jpg);
+    background-repeat: repeat-y;
+    /*height: 100vh;*/
+}
