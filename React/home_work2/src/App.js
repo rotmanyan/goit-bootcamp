@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable */
+import React, {Component} from 'react';
+import Button from './Component/Button/Button';
+import styles from './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+
+    state = {
+        items: [],
+        item: '',
+    };
+
+
+    render() {
+        return (
+            <div className={styles.todoListMain}>
+                <form>
+                    <input type="text"
+                           placeholder='Enter text plea'/>
+                   <Button type='submit' text='text'/>
+                </form>
+            </div>
+        );
+    }
 }
 
 export default App;
