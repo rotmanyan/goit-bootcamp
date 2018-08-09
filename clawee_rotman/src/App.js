@@ -16,22 +16,34 @@ class App extends Component {
     };
 
     componentDidMount() {
-       database.ref().on('value',(snapshot) => {
-            this.setState({data: snapshot.val()})
-        })
+       // database.ref().on('value',(snapshot) => {
+       //      this.setState({data: snapshot.val()})
+       //  }
+        database.ref('/items').once('value')
+            .then(snapshot => snapshot.val())
+            .then(data => Object.values(data))
+            .then(result => {
+                this.setState({
+                    items: result,
+                })
+            });
     }
 
     addItem = (e) => {
         e.preventDefault();
         const value = this.state.item;
-        const date = Date.now();
         const task = {
             text: value,
-            id: date,
         };
+        const key = database.ref('/items').push(task).key;
+        task.id = key;
+        let updates = {};
+        updates['/items/' + key] = task;
+        database.ref().update(updates);
+
 
         if (this.state.item !== '') {
-            database.ref('/items').push(task);
+            // database.ref('/items').push(task);
             this.setState(prevState => ({
                 items: [task, ...prevState.items],
                 item: '',
@@ -41,7 +53,7 @@ class App extends Component {
 
     deleteItem = (id) => {
         const filter = this.state.items.filter(el => el.id !== id);
-        console.log(database.ref('/items'));
+        database.ref('/items').child(id).remove();
 
         this.setState({
             items: filter,
