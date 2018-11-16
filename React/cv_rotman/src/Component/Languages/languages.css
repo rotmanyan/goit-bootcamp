@@ -1,0 +1,33 @@
+.wrapperLanguages {
+    color: #ffffff;
+}
+
+.titleLanguages {
+    border-bottom: 1px solid #ffffff;
+    font-size: 2.5rem;
+}
+
+.listLanguages {
+    margin-top: 3rem;
+}
+
+.itemLanguages {
+    margin-bottom: 1rem;
+}
+
+.itemLanguages:last-child {
+    margin-bottom: 0;
+}
+
+.langLanguages {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.levelLanguages {
+    font-size: 1.5rem;
+}
+
+.discriptionLanguages {
+    font-size: 1.3rem;
+}

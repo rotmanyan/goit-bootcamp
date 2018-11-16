@@ -1,0 +1,12 @@
+.wrapperSleep {
+    background-color: #000000;
+    background-image: url('../../Apperance/img/apple.png');
+    background-position: center;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    height: 110%;
+    width: 110%;
+    position: relative;
+    top: -7%;
+    left: -3%;
+}

@@ -1,0 +1,56 @@
+.wrapperObjective {
+    color: #ffffff;
+    padding-top: 1rem;
+}
+
+.surnameObjective {
+    font-size: 2rem;
+}
+
+.devObjective {
+    font-size: 1.4rem;
+    font-weight: 200;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 1rem;
+}
+
+.linksObjective {
+
+}
+
+.linkObjective {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameObjective {
+    font-weight: 700;
+}
+
+.decsObjective {
+    color: #ffffff;
+    font-weight: 200;
+}
+
+.linkObjective:nth-child(4) .decsObjective{
+    font-weight: 400;
+}
+
+.linkObjective:nth-child(5) .decsObjective{
+    font-weight: 400;
+}
+
+.titleObjective {
+    border-bottom: 1px solid #ffffff;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.descriptionObjective {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.descriptionObjective:last-child {
+    margin: 0;
+}

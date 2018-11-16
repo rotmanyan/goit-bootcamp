@@ -1,0 +1,29 @@
+.wrapperSkills {
+    color: #ffffff;
+    padding-top: 1rem;
+}
+
+.titleSkills {
+    font-size: 2rem;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 1rem;
+}
+
+.listSkills {
+    padding: 1rem 1rem 2rem;
+    font-weight: 300;
+}
+
+.itemSkills {
+    margin-bottom: .5rem;
+}
+
+.itemSkills::before {
+    content: '';
+    padding: .5rem;
+    background-image: url(../../Apperance/img/checked.svg);
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

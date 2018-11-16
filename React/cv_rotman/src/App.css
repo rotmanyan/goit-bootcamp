@@ -1,0 +1,9 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("http://androidcentral.us/wp-content/uploads/2014/06/low-poly-texture-18.png?541271");
+}

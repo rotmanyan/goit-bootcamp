@@ -1,0 +1,19 @@
+.wrapperTranslate {
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.flagUsa {
+    /*width: 2rem;*/
+    /*height: 2rem;*/
+    /*background-image: url(../../Apperance/img/ukFlag.svg);*/
+    /*background-size: contain;*/
+}
+
+.flagRus {
+    /*width: 2rem;*/
+    /*height: 2rem;*/
+    /*background-image: url(../../Apperance/img/norwayFlag.svg);*/
+    /*background-size: contain;*/
+}

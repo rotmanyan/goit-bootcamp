@@ -1,0 +1,47 @@
+.wrapperHome {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.titleHome {
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+}
+
+.descriptionHome {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.routerHome {
+    margin: 4rem auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.buttonHome {
+    flex-basis: 48%;
+    background: linear-gradient(to bottom, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    padding: 1rem 0;
+    margin: 0 0.3rem 0.5rem 0;
+}
+
+.buttonHome:nth-child(even) {
+    margin-right: 0;
+}
+
+.buttonHome:last-child {
+    margin: 0;
+}
