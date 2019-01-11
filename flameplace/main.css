@@ -6972,6 +6972,7 @@ footer {
     .page-wrapper > div > div {
         width: 100%;
         display: none;
+        display: none;
     }
 
     .logo img,
