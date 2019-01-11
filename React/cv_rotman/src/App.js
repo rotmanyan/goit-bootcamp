@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 import Iphone from './Component/Iphone/Iphone'
-import { connect } from 'react-redux'
+import {connect} from 'react-redux'
+import {add, sub} from './redux/actions'
 
 const mapStateToProps = ({})
 

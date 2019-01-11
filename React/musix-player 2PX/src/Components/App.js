@@ -76,6 +76,13 @@ class App extends Component {
         
     };
 
+    // componentDidMount() {
+    //     var url = this.props.apiUrl;
+    //     Request.get(url)
+    //         .then(response => this.setState({data: JSON.stringify(response.currently.summary)}))
+    //         .catch(error => {});
+    // }
+
     searchData = (e) => {
         e.preventDefault();
         if (this.state.searchValue === '') {
