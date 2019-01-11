@@ -1341,7 +1341,6 @@ span.bold {
     overflow: hidden;
 }
 
-
 .drp-acc .dropdown-list .dropdown-item__link {
     padding: 10px 0;
     display: inline-block;
@@ -4384,7 +4383,7 @@ ul.thumbnails {
     color: #ba9f6c;
 }
 
-.footer-link a{
+.footer-link a {
     text-decoration: none;
 }
 
@@ -5120,12 +5119,10 @@ footer {
     font-weight: 300;
 }
 
-
 .account-form-avatar a.orange,
 .account-form-block a.orange {
     cursor: pointer;
 }
-
 
 .account-form-heading {
     margin-bottom: 30px;
@@ -5546,12 +5543,11 @@ footer {
     overflow-y: auto;
 }
 
-
 .posts-new .gallery-col > [class*=col] {
     padding: 0;
 }
 
-.catalog-tools-gallery-col{
+.catalog-tools-gallery-col {
     overflow: hidden;
 }
 
@@ -5560,7 +5556,7 @@ footer {
     background-color: #3b3f52;
 }
 
-.vertical-scroll{
+.vertical-scroll {
     height: 100%;
     overflow-y: scroll;
 }
@@ -11074,5 +11070,44 @@ footer {
 }
 
 .tcenter {
-    text-align:center;
+    text-align: center;
+}
+
+@media all and (max-width: 480px) {
+    .vertical-tab__wrapper {
+        height: auto;
+        width: auto;
+    }
+
+    .catalog-tools-gallery-col .container-gallery {
+        max-width: calc(100% - 2.5rem);
+        margin-left: auto;
+        width: auto;
+        overflow: unset;
+    }
+
+    .catalog-tools-gallery-col .row-gallery {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .catalog-tools-gallery-col .row-gallery .gallery-item {
+        width: auto;
+        height: auto;
+    }
+
+    .row-gallery-header h2 {
+        font-size: 1.3rem;
+        line-height: normal;
+        color: #fff;
+    }
+    .catalog-tools-gallery-col .row-gallery {
+        border-top: 2px solid #fff;
+        margin: 0;
+    }
+
+    .catalog-tools-gallery-col {
+        width: auto;
+    }
 }
