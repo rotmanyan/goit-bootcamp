@@ -9,3 +9,4 @@ npm-debug.log
 *.css.map
 dist/
 package-lock.json
+.DS_Store
