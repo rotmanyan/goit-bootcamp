@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.header {
+    background-color: rgb(128, 90, 67);
+}
+
+.footer {
+    background-color: rgb(128, 90, 67);
+}
+
+.container {
+    min-width: 10rem;
+    max-width: 75rem;
+    margin: auto;
+}
+
+.container--bookReservation {
+    max-width: 44rem;
+    text-align: center;
+    min-height: 34rem;
+    padding: 9rem 0;
+}
+
+.container--aboutUs {
+    max-width: 44rem;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.container--video {
+    max-width: 44rem;
+    padding: 7rem 0;
+}
+
+.container--bread {
+    padding: 10rem 0;
+}
+
+.container--bakery {
+    padding: 5rem 0;
+}
+
+.container--contact {
+    max-width: 44rem;
+    background-color: #bca070;
+}
+
+.container--footer {
+    padding: 9rem 0 2rem;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+}
+
+.navigation__logo {
+    display: block;
+    background-image: url(../img/logo.png);
+    height: 2rem;
+    width: 9rem;
+    background-repeat: no-repeat;
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 40%;
+}
+
+.navigation__link {
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.navigation__link:hover {
+    color: #ffffff;
+}
+
+.main {
+    padding-top: 5rem;
+}
+
+#bookReservation {
+    background-image: url(../img/banner-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bookReservation__title {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.bookReservation__description {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin: 1rem 0;
+    font-weight: 100;
+}
+
+.bookReservation__button {
+    display: block;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #3f9d54;
+    padding: 1rem 2rem;
+    width: fit-content;
+    margin: auto;
+    border: 0.125rem dotted transparent;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.bookReservation__button:hover {
+    background-color: rgba(63, 157, 84, 0.81);
+    border-color: #ffffff;
+}
+
+.aboutUs__title {
+    font-size: 2rem;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.aboutUs__description {
+    font-size: 1.25rem;
+    color: #000000;
+    margin-top: 1rem;
+    font-weight: 100;
+}
+
+#video {
+    background-image: url(../img/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.video__iframe {
+    width: 100%;
+}
+
+#bread {
+    background-image: url(../img/bread-sec-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bread__button {
+    border: .125rem solid #ffffff;
+    padding: 1rem;
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: .125rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#bakery {
+    text-align: center;
+}
+
+.bakery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.bakery__item {
+    flex-basis: 32%;
+}
+
+.bakery__img {
+    min-height: 17.5rem;
+    background-color: #bca070;
+}
+
+.bakery__img--kneading {
+    background-image: url(../img/bread-1.jpg);
+}
+
+.bakery__img--brownBread {
+    background-image: url(../img/bread-2.jpg);
+}
+
+.bakery__img--oliveBread {
+    background-image: url(../img/bread-3.jpg);
+}
+
+.bakery__img--ryeBread {
+    background-image: url(../img/bread-4.jpg);
+}
+
+.bakery__img--baguette {
+    background-image: url(../img/bread-5.jpg);
+}
+
+.bakery__img--breads {
+    background-image: url(../img/bread-6.jpg);
+}
+
+.bakery__subtitle {
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+.footer__title {
+    text-transform: capitalize;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+#pastry {
+    background-image: url(../img/pastry-sec-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#pasties {
+    text-align: center;
+}
+
+.pasties__img--cherryPastry {
+    background-image: url(../img/pastry-1.jpg);
+}
+
+.pasties__img--strawberryTart {
+    background-image: url(../img/pastry-2.jpg);
+}
+
+.pasties__img--jellyDonut {
+    background-image: url(../img/pastry-3.jpg);
+}
+
+.pasties__img--vanilaPastry {
+    background-image: url(../img/pastry-4.jpg);
+}
+
+.pasties__img--grapesPastry {
+    background-image: url(../img/pastry-5.jpg);
+}
+
+.pasties__img--croissant {
+    background-image: url(../img/pastry-6.jpg);
+}
+
+#cafe {
+    background-image: url(../img/cafe-sec-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#caffe {
+    text-align: center;
+}
+
+.caffe__img--coffe {
+    background-image: url(../img/cafe-1.jpg);
+}
+
+.caffe__img--deliciousLunch {
+    background-image: url(../img/cafe-2.jpg);
+}
+
+.caffe__img--breakfast {
+    background-image: url(../img/cafe-3.jpg);
+}
+
+.caffe__img--coffeBread {
+    background-image: url(../img/cafe-4.jpg);
+}
+
+.caffe__img--donut {
+    background-image: url(../img/cafe-5.jpg);
+}
+
+.caffe__img--freshFood {
+    background-image: url(../img/cafe-6.jpg);
+}
+
+#contact {
+    position: relative;
+    top: 7.125rem;
+    margin-top: -7.125rem;
+}
+
+.contact__title {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.contact__form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__input {
+    flex-basis: 50%;
+    border: none;
+    background-color: #bca070;
+    border: .125rem solid #77623f;
+    font-size: 1.25rem;
+    border-right: none;
+    padding: 1rem;
+    outline: none;
+}
+
+.contact__input:first-child {
+    border-left: none;
+}
+
+.contact__textarea {
+    flex-basis: 100%;
+    border: none;
+    background-color: #bca070;
+    outline: none;
+    border-bottom: .125rem dashed #77623f;
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+.contact__submit {
+    flex-basis: 100%;
+    border: none;
+    background-color: #bca070;
+    padding: 1.5rem 0;
+}
+
+.contact__button {
+    display: block;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #3f9d54;
+    padding: 1rem 2rem;
+    width: fit-content;
+    margin: auto;
+    border: 0.125rem dotted transparent;
+    cursor: pointer;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.contact__button:hover {
+    background-color: rgba(63, 157, 84, 0.81);
+    border-color: #ffffff;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer__item {
+    text-transform: capitalize;
+}
+
+.footer__description--email {
+    text-transform: lowercase;
+}
