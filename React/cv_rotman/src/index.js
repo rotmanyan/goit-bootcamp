@@ -5,7 +5,7 @@ import store from 'redux/store'
 import './index.css'
 import App from './App'
 import {BrowserRouter} from 'react-router-dom'
-import USA from './Apperance/img/ukFlag.svg'
+import USA from './Apperance/img/ukFlag.svg't
 import RUS from './Apperance/img/norwayFlag.svg'
 
 

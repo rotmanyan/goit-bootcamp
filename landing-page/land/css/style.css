@@ -11,59 +11,54 @@
 }
 
 .header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
     background-color: rgb(128, 90, 67);
-}
-
-.footer {
-    background-color: rgb(128, 90, 67);
+    z-index: 1;
 }
 
 .container {
     min-width: 10rem;
     max-width: 75rem;
     margin: auto;
+    padding: 0 1rem;
 }
 
 .container--bookReservation {
     max-width: 44rem;
     text-align: center;
-    min-height: 34rem;
-    padding: 9rem 0;
+    padding: 3rem 1rem;
 }
 
 .container--aboutUs {
     max-width: 44rem;
     text-align: center;
-    padding: 5rem 0;
+    padding: 3rem 1rem;
 }
 
 .container--video {
     max-width: 44rem;
-    padding: 7rem 0;
+    padding: 5rem 1rem;
 }
 
 .container--bread {
-    padding: 10rem 0;
+    padding: 13rem 1rem;
 }
 
 .container--bakery {
-    padding: 5rem 0;
+    padding: 3rem 1rem;
 }
 
 .container--contact {
     max-width: 44rem;
     background-color: #bca070;
+    padding: 0;
 }
 
 .container--footer {
-    padding: 9rem 0 2rem;
-}
-
-.header {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
+    padding: 9rem 1rem 2rem;
 }
 
 .navigation {
@@ -82,9 +77,9 @@
 }
 
 .navigation__list {
-    display: flex;
+    display: none;
     justify-content: space-between;
-    flex-basis: 40%;
+    flex-basis: 60%;
 }
 
 .navigation__link {
@@ -104,34 +99,37 @@
 
 #bookReservation {
     background-image: url(../img/banner-bg.jpg);
-    background-position: center;
+    background-position: center top;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
 .bookReservation__title {
-    font-size: 3rem;
+    font-size: 1.75rem;
     color: #ffffff;
 }
 
 .bookReservation__description {
     font-size: 1.25rem;
     color: #ffffff;
-    margin: 1rem 0;
+    margin: 1rem auto;
     font-weight: 100;
+    max-width: 13rem;
 }
 
 .bookReservation__button {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #ffffff;
     background-color: #3f9d54;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     width: fit-content;
     margin: auto;
     border: 0.125rem dotted transparent;
     cursor: pointer;
-    font-weight: 100;
+    font-weight: 400;
+    border-radius: 0.25rem;
+    min-width: 100%;
 }
 
 .bookReservation__button:hover {
@@ -143,6 +141,7 @@
     font-size: 2rem;
     color: #000000;
     text-transform: capitalize;
+    font-weight: 100;
 }
 
 .aboutUs__description {
@@ -155,18 +154,19 @@
 #video {
     background-image: url(../img/video-bg.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     background-attachment: fixed;
 }
 
 .video__iframe {
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #bread {
     background-image: url(../img/bread-sec-bg.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     background-attachment: fixed;
 }
 
@@ -178,7 +178,7 @@
     margin: auto;
     text-transform: uppercase;
     color: #ffffff;
-    border-radius: .125rem;
+    border-radius: .25rem;
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -188,19 +188,21 @@
 }
 
 .bakery__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-row-gap: 1rem;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .bakery__item {
-    flex-basis: 32%;
 }
 
 .bakery__img {
     min-height: 17.5rem;
     background-color: #bca070;
+    background-position: center;
+    background-size: cover;
+    border-radius: .25rem;
 }
 
 .bakery__img--kneading {
@@ -230,6 +232,13 @@
 .bakery__subtitle {
     text-transform: capitalize;
     margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.bakery__description {
+    font-size: 1rem;
+    font-weight: 100;
 }
 
 .footer__title {
@@ -237,12 +246,14 @@
     text-align: center;
     color: #ffffff;
     margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 100;
 }
 
 #pastry {
     background-image: url(../img/pastry-sec-bg.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     background-attachment: fixed;
 }
 
@@ -277,7 +288,7 @@
 #cafe {
     background-image: url(../img/cafe-sec-bg.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     background-attachment: fixed;
 }
 
@@ -311,66 +322,72 @@
 
 #contact {
     position: relative;
-    top: 7.125rem;
-    margin-top: -7.125rem;
+    top: 6.75rem;
+    margin-top: -6.75rem;
+    padding: 0 1rem;
 }
 
 .contact__title {
     color: #ffffff;
     text-align: center;
-    font-weight: 100;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 1.75rem;
     padding: 1rem 0;
 }
 
 .contact__form {
-    display: flex;
-    flex-wrap: wrap;
+    border-top: .0625rem solid #77623f;
 }
 
 .contact__input {
-    flex-basis: 50%;
     border: none;
     background-color: #bca070;
-    border: .125rem solid #77623f;
-    font-size: 1.25rem;
-    border-right: none;
-    padding: 1rem;
+    border-bottom: .0625rem solid #77623f;
+    font-size: 1.125rem;
+    padding: 1.25rem 1rem;
     outline: none;
+    width: 100%;
+    font-weight: 100;
 }
 
-.contact__input:first-child {
-    border-left: none;
+.contact__input::placeholder {
+    color: #77623f;
 }
 
 .contact__textarea {
-    flex-basis: 100%;
     border: none;
     background-color: #bca070;
     outline: none;
-    border-bottom: .125rem dashed #77623f;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     padding: 1rem;
+    width: 100%;
+    font-weight: 100;
+}
+
+.contact__textarea::placeholder {
+    color: #77623f;
 }
 
 .contact__submit {
-    flex-basis: 100%;
     border: none;
     background-color: #bca070;
     padding: 1.5rem 0;
+    width: 100%;
+    border-top: .0625rem dashed #77623f;
 }
 
 .contact__button {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #ffffff;
     background-color: #3f9d54;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     width: fit-content;
     margin: auto;
-    border: 0.125rem dotted transparent;
+    border: .125rem dotted transparent;
     cursor: pointer;
-    font-weight: 100;
+    font-weight: 400;
+    border-radius: .25rem;
     text-transform: capitalize;
 }
 
@@ -379,17 +396,121 @@
     border-color: #ffffff;
 }
 
+.footer {
+    background-color: rgb(128, 90, 67);
+}
+
 .footer__list {
-    display: flex;
-    justify-content: space-between;
     color: #ffffff;
     text-align: center;
+    display: grid;
+    grid-row-gap: 1rem;
 }
 
 .footer__item {
     text-transform: capitalize;
 }
 
+.footer__subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.footer__description {
+    margin-bottom: .5rem;
+}
+
+.footer__description:last-child {
+    margin-bottom: 0;
+}
+
 .footer__description--email {
     text-transform: lowercase;
+}
+
+@media all and (min-width: 768px) {
+    .navigation__list {
+        display: flex;
+    }
+
+    .bookReservation__title {
+        font-size: 4.25rem;
+    }
+
+    .bookReservation__description {
+        margin: 2rem auto;
+        max-width: unset;
+    }
+
+    .bookReservation__button {
+        min-width: unset;
+        border-radius: .375rem;
+        font-size: 1.625rem;
+        padding: 1.5rem 3rem;
+    }
+
+    .aboutUs__title {
+        font-size: 4rem;
+    }
+
+    .aboutUs__description {
+        font-size: 1.5rem;
+        padding: 0 4rem;
+    }
+
+    .video__iframe {
+        min-height: unset;
+    }
+
+    .bakery__list {
+        grid-template-columns: 45% 45%;
+        grid-row-gap: 5rem;
+    }
+
+    .contact__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact__input {
+        flex-basis: 50%;
+    }
+
+    .contact__input:first-child {
+        border-right: .0625rem solid #77623f;
+    }
+
+    .contact__textarea {
+        flex-basis: 100%;
+    }
+
+    .contact__button {
+        flex-basis: 100%;
+    }
+
+    .footer__list {
+        grid-template-columns: repeat(3, 32%);
+        justify-content: space-between;
+    }
+}
+
+@media all and (min-width: 1024px) {
+
+    .navigation__list {
+        flex-basis: 35%;
+    }
+
+    .container--aboutUs {
+        min-width: 54rem;
+    }
+
+    .bakery__list {
+        grid-template-columns: 32% 32% 32%;
+    }
+
+    .container--contact {
+        max-width: 54rem;
+    }
 }
